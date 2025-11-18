@@ -7,15 +7,15 @@ import java.util.Objects;
 
 public class Agendamento {
 
-    private Long id;
-    private String titulo;
-    private String descricao;
-    private LocalDateTime dataInicio;
-    private LocalDateTime dataFim;
-    private StatusAgendamento status;
-    private String usuario;
-    private LocalDateTime criadoEm;
-    private LocalDateTime atualizadoEm;
+    private final Long id;
+    private final String titulo;
+    private final String descricao;
+    private final LocalDateTime dataInicio;
+    private final LocalDateTime dataFim;
+    private final StatusAgendamento status;
+    private final String usuario;
+    private final LocalDateTime criadoEm;
+    private final LocalDateTime atualizadoEm;
 
     private Agendamento(Builder builder) {
         this.id = builder.id;
