@@ -1,7 +1,6 @@
 package com.agendamento.miniagendamento.core.entities;
 
 import com.agendamento.miniagendamento.core.enums.StatusAgendamento;
-import org.springframework.boot.autoconfigure.info.ProjectInfoProperties;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -105,5 +104,9 @@ public class Agendamento {
         public Agendamento build() {
             return new Agendamento(this);
         }
+    }
+
+    public static Builder builder() {
+        return new Builder();
     }
 }
